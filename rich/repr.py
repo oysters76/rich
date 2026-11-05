@@ -65,7 +65,7 @@ def auto(
                 return f"{self.__class__.__name__}({', '.join(repr_str)})"
 
         def auto_rich_repr(self: Type[T]) -> Result:
-            """Auto generate __rich_rep__ from signature of __init__"""
+            """Auto generate __rich_repr__ from signature of __init__"""
             try:
                 import inspect
 

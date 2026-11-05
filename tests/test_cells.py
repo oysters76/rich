@@ -242,7 +242,7 @@ def test_zwj():
     assert cell_len("") == 0
     assert cell_len("\u200d") == 0
     assert cell_len("1\u200d") == 1
-    # This sequence should really produce 2, but it aligns with with wcwidth
+    # This sequence should really produce 2, but it aligns with wcwidth
     # What gets written to the terminal is anybody's guess, I've seen multiple variations
     assert cell_len("1\u200d2") == 1
 

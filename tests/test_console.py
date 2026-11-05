@@ -1073,7 +1073,7 @@ def test_tty_compatible() -> None:
     """Check TTY_COMPATIBLE environment var."""
 
     class FakeTTY:
-        """An file file-like which reports it is a TTY."""
+        """A file-like which reports it is a TTY."""
 
         def __init__(self) -> None:
             self.called_isatty = False

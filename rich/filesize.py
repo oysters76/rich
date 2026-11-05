@@ -70,7 +70,7 @@ def decimal(
         str (separator): The string to separate the value from the units (default = " ").
 
     Returns:
-        `str`: A string containing a abbreviated file size and units.
+        `str`: A string containing an abbreviated file size and units.
 
     Example:
         >>> filesize.decimal(30000)

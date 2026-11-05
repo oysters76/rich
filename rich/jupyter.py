@@ -34,7 +34,7 @@ class JupyterRenderable:
 
 
 class JupyterMixin:
-    """Add to an Rich renderable to make it render in Jupyter notebook."""
+    """Mixin for a Rich renderable to make it render in a Jupyter notebook."""
 
     __slots__ = ()
 

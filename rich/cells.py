@@ -241,11 +241,11 @@ def _split_text(
 
     Args:
         text: Text to split.
-        cell_position Offset in cells.
+        cell_position: Offset in cells.
         unicode_version: Unicode version, `"auto"` to auto detect, `"latest"` for the latest unicode version.
 
     Returns:
-        Tuple to two split strings.
+        Tuple of two split strings.
     """
     if cell_position <= 0:
         return "", text
@@ -285,11 +285,11 @@ def split_text(
 
     Args:
         text: Text to split.
-        cell_position Offset in cells.
+        cell_position: Offset in cells.
         unicode_version: Unicode version, `"auto"` to auto detect, `"latest"` for the latest unicode version.
 
     Returns:
-        Tuple to two split strings.
+        Tuple of two split strings.
     """
     if _is_single_cell_widths(text):
         return text[:cell_position], text[cell_position:]
